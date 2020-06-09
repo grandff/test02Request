@@ -14,19 +14,34 @@ public class TestDAOimpl implements TestDAO {
 	@Override
 	public int insert(RequestVO vo) {
 		logger.info("insert() ... vo : {} ", vo);
-		return 0;
+		return 1;
 	}
 
 	@Override
 	public RequestVO selectOne(RequestVO vo) {
 		logger.info("selectOne() ... vo : {} ", vo);
-		return null;
+		
+		RequestVO requestVO = new RequestVO();
+		requestVO.setName(vo.getName());
+		requestVO.setTel(vo.getTel());
+	
+		return requestVO;
 	}
 
 	@Override
 	public ArrayList<RequestVO> selectAll() {
 		logger.info("selectAll() ... ");
-		return null;
+		
+		ArrayList<RequestVO> list = new ArrayList<RequestVO>();
+		RequestVO vo = null;
+		for(int i =0; i<4; i++) {
+			vo = new RequestVO();
+			vo.setName("kim" + i);
+			vo.setTel("tel " + i);
+			list.add(vo);					
+		}
+		
+		return list;
 	}
 
 }

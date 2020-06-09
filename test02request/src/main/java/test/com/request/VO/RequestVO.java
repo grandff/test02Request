@@ -10,7 +10,7 @@ public class RequestVO {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	public RequestVO() {
-		logger.info("requestVO on");
+		//logger.info("requestVO on");
 	}
 	
 	private int num;

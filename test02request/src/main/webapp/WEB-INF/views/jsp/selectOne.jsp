@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>결과</h1>
-	<h2>이름 : ${name }</h2>
-	<h2>번호 : ${tel }</h2>
+	<h2>이름 : ${model.name }</h2>
+	<h2>번호 : ${model.tel }</h2>
 </body>
 </html>
