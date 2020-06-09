@@ -52,4 +52,10 @@ public class TestDAOimpl implements TestDAO {
 		return 1;
 	}
 
+	@Override
+	public int update(RequestVO vo) {
+		logger.info("update() ... vo : {} ", vo);
+		return 1;
+	}
+
 }

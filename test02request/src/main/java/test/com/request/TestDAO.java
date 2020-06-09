@@ -9,4 +9,5 @@ public interface TestDAO {
 	public RequestVO selectOne(RequestVO vo);
 	public ArrayList<RequestVO> selectAll();
 	public int delete(RequestVO vo);
+	public int update(RequestVO vo);
 }

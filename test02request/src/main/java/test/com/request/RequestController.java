@@ -152,4 +152,26 @@ public class RequestController {
 		else return "redirect:insert.do";
 	}
 	
+	@RequestMapping(value = "/updateOK.do", method = RequestMethod.POST)		
+	public String updateOK(RequestVO vo) {			
+		logger.info("updateOK on");
+		logger.info("vo :: {}", vo);					
+		int result = 0;						
+		try {						
+			result = ts.update(vo);
+			
+		}catch(NullPointerException e) {
+			
+		}catch(IndexOutOfBoundsException e) {
+			
+		}catch(Exception e) {
+			
+		}finally {
+			
+		}	
+		
+		if(result == 1) return "redirect:selectAll.do";
+		else return "redirect:insert.do";
+	}
+	
 }

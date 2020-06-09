@@ -12,7 +12,8 @@
 	<h2>번호 : ${model.tel }</h2>
 	<div>
 		<form name="form1" action="updateOK.do" method="post">
-			<input type="text" name="num" placeholder = "순번" value="${model.num }"/>
+			${model.num }
+			<input type="hidden" name="num" placeholder = "번호" value="${model.num }"/>
 			<input type="text" name="name" placeholder = "이름" value="${model.name }"/>
 			<input type="text" name="tel" placeholder = "번호" value="${model.tel }"/>			
 			<input type="submit">				

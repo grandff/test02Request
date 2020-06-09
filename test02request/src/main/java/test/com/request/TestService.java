@@ -29,4 +29,9 @@ public class TestService {
 		return dao.delete(vo);
 	}
 
+	public int update(RequestVO vo) {
+		// TODO Auto-generated method stub
+		return dao.update(vo);
+	}
+
 }
