@@ -24,4 +24,9 @@ public class TestService {
 		return dao.selectAll();
 	}
 
+	public int delete(RequestVO vo) {
+		// TODO Auto-generated method stub
+		return dao.delete(vo);
+	}
+
 }

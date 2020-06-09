@@ -8,4 +8,5 @@ public interface TestDAO {
 	public int insert(RequestVO vo);
 	public RequestVO selectOne(RequestVO vo);
 	public ArrayList<RequestVO> selectAll();
+	public int delete(RequestVO vo);
 }

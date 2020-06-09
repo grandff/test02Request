@@ -36,12 +36,19 @@ public class TestDAOimpl implements TestDAO {
 		RequestVO vo = null;
 		for(int i =0; i<4; i++) {
 			vo = new RequestVO();
+			vo.setNum(i);
 			vo.setName("kim" + i);
 			vo.setTel("tel " + i);
 			list.add(vo);					
 		}
 		
 		return list;
+	}
+
+	@Override
+	public int delete(RequestVO vo) {
+		logger.info("delete() ... vo : {} ", vo);
+		return 1;
 	}
 
 }

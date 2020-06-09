@@ -39,7 +39,7 @@ public class RequestVO {
 	
 	@Override
 	public String toString() {
-		return "RequestVO [name=" + name + ", tel=" + tel + "]";
+		return "RequestVO [num=" + num + ", name=" + name + ", tel=" + tel + "]";
 	}	
 	
 }

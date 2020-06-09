@@ -13,16 +13,20 @@
 		<table border = "1">
 			<thead>
 				<tr>
+					<th>번호</th>
 					<th>이름</th>
 					<th>연락처</th>
+					<th>비고</th>
 				</tr>
 			</thead>
 			<tbody>
 			<!-- 목록 on -->
 				<c:forEach var="vo" items="${list }" >
 				<tr>
-					<td><a href="selectOne.do?name=${vo.name }&tel=${vo.tel}">${vo.name }</a></td>
+					<td><a href="selectOne.do?name=${vo.name }&tel=${vo.tel}&num=${vo.num}">${vo.num }</a></td>
+					<td><a href="selectOne.do?name=${vo.name }&tel=${vo.tel}&num=${vo.num}">${vo.name }</a></td>
 					<td>${vo.tel }</td>
+					<td><a href="deleteOK.do?num=${vo.num }">삭제</a></td>
 				</tr>
 				</c:forEach>								
 			<!-- 목록 off -->

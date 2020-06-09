@@ -131,4 +131,25 @@ public class RequestController {
 		}	
 	}
 	
+	@RequestMapping(value = "/deleteOK.do", method = RequestMethod.GET)		
+	public String deleteOK(RequestVO vo) {			
+		logger.info("deleteOK on");
+		
+		int result = ts.delete(vo);						
+		try {						
+						
+		}catch(NullPointerException e) {
+			
+		}catch(IndexOutOfBoundsException e) {
+			
+		}catch(Exception e) {
+			
+		}finally {
+			
+		}	
+		
+		if(result == 1) return "redirect:selectAll.do";
+		else return "redirect:insert.do";
+	}
+	
 }
