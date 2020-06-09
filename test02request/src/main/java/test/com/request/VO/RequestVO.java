@@ -10,9 +10,10 @@ public class RequestVO {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	public RequestVO() {
-		
+		logger.info("requestVO on");
 	}
 	
+	private int num;
 	private String name = "";
 	private String tel = "";
 
@@ -29,5 +30,16 @@ public class RequestVO {
 		this.tel = tel;
 	}
 	
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	
+	@Override
+	public String toString() {
+		return "RequestVO [name=" + name + ", tel=" + tel + "]";
+	}	
 	
 }

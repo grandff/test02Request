@@ -11,7 +11,7 @@
 		<h1>등록 화면</h1>
 		<form name="form1" action="insertOK.do" method="post">
 			<input type="text" name="name" placeholder = "이름"/>
-			<input type="text" name="tel" placeholder = "010"/>			
+			<input type="text" name="tel" placeholder = "번호"/>			
 			<input type="submit">				
 		</form>
 		
