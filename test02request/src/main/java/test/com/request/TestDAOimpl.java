@@ -22,6 +22,7 @@ public class TestDAOimpl implements TestDAO {
 		logger.info("selectOne() ... vo : {} ", vo);
 		
 		RequestVO requestVO = new RequestVO();
+		requestVO.setNum(vo.getNum());
 		requestVO.setName(vo.getName());
 		requestVO.setTel(vo.getTel());
 	
